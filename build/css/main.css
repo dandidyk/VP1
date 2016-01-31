@@ -1,10 +1,20 @@
-@import url("stylesheet.css");
+@import url("fonts.css");
 * {
   box-sizing: border-box; }
 
 body, html {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
+
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-image: -webkit-linear-gradient(top, #f4e39b, #c3edad); }
 
 .clearfix:before, .clearfix:after {
   content: " ";
@@ -289,7 +299,9 @@ body, html {
 
 .section-information-title,
 .experience-title,
-.education-title {
+.education-title,
+.section-my-works-title,
+.write-to-me-title {
   margin: 0;
   background: #7b7979;
   background-image: -webkit-linear-gradient(top, #a8a6a6, #7b7979);
@@ -313,7 +325,9 @@ body, html {
 
 .section-information,
 .experience,
-.education {
+.education,
+.section-my-works,
+.write-to-me {
   background-color: #f6f5f5;
   border: 1px solid #d6d5d3;
   border-radius: 0 0 3px 3px;
@@ -384,7 +398,7 @@ body, html {
   display: inline-block;
   padding: 0px;
   vertical-align: middle;
-  top: -9%;
+  top: -7%;
   right: 8px;
   position: relative; }
 
@@ -396,7 +410,7 @@ body, html {
   display: inline-block;
   padding: 0px;
   vertical-align: middle;
-  top: -9%;
+  top: -7%;
   left: 4px;
   position: relative; }
 
@@ -535,15 +549,3 @@ body, html {
   margin-left: 59px;
   position: relative;
   top: 2px; }
-
-.footer-lock-img {
-  content: "";
-  display: inline-block;
-  width: 30px;
-  height: 25px;
-  margin-right: 5px;
-  background: url("../img/spritesheet.png") no-repeat;
-  background-position: -2px -238px; }
-
-.footer-lock-img:hover {
-  background-position: -2px -416px; }
