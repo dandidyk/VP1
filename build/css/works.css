@@ -19,37 +19,37 @@
   background-image: -o-linear-gradient(top, #7ce7cd, #40b89a);
   background-image: linear-gradient(to bottom, #7ce7cd, #40b89a);
   text-shadow: 0px 1px 0px rgba(139, 213, 195, 1);
-	box-shadow: inset 0 1px 0 0px rgba(139, 213, 195,1);
-	border: none;
-	 color: #1e7465;
+  box-shadow: inset 0 1px 0 0px rgba(139, 213, 195,1);
+  border: none;
+  color: #1e7465;
 }
 
-.section-my-works-list{
+.my-works-list{
 	margin: 39px auto;
 	padding: 0px 29px;
 }
 
-.section-my-works-list-item {
-	  border: 1px solid #9f9f9f;
-    width: 166px;
-    display: inline-block;
-    vertical-align: top;
-    word-wrap: break-word;
-    position: relative;
-    margin-bottom: 24px;
-    border-radius: 5px;
-    margin-left: 14px;
-    margin-right: 14px;
+.my-works-list-item {
+ border: 1px solid #9f9f9f;
+ width: 166px;
+ display: inline-block;
+ vertical-align: top;
+ word-wrap: break-word;
+ position: relative;
+ margin-bottom: 24px;
+ border-radius: 5px;
+ margin-left: 14px;
+ margin-right: 14px;
 }
 
 .works-wrap-link{
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    display: table;
-   	opacity: 0;
-   	transition: all .5s;
-  }
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  display: table;
+  opacity: 0;
+  transition: all .5s;
+}
 
 .works-wrap-link:hover {
 	opacity: .75;
@@ -58,99 +58,101 @@
 } 
 
 .works-link {
-		position: relative;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 13px;
-    font-family: "open_sanssemibold";
-    color: #fff;
-    text-decoration: none;
-  }
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 13px;
+  font-family: "open_sanssemibold";
+  color: #fff;
+  text-decoration: none;
+}
 
-  .works-link:before {
-  	display: block;
-    content: " ";
-    width: 125px;
-    height: 26px;
-    position: absolute;
-    top: 46px;
-    left: 19px;
-    border: 2px solid #fff;
-    border-radius: 5px;
+.works-link:before {
+ display: block;
+ content: " ";
+ width: 125px;
+ height: 26px;
+ position: absolute;
+ top: 46px;
+ left: 19px;
+ border: 2px solid #fff;
+ border-radius: 5px;
 
-  }
+}
+
+
+.img-wrap {
+ border-bottom: 1px solid rgb(182, 182, 182);
+}
 
 .works-item-img {
-		margin: 0px;
-    padding: 0px;
-    border-bottom: 1px solid rgb(182, 182, 182);
-    width: 100%;
-    height: 120px;
-  }
+  width: 100%;
+  height: 120px;
+}
 
 .works-bottom-link{
- 	 background-color: #f2f2f2;
-    padding: 0px;
-    margin: 0px;
-    font-size: 13px;
-    font-family: "open_sanssemibold";
-    color: rgb(114, 112, 112);
-    line-height: 1.692;
-    text-align: center;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
-    width: 100%;
-    display: inline-block;
-    min-height: 33px;
-    line-height: 2;
-    word-wrap: break-word;
-    padding: 0px 10px 0px 10px;
-    text-decoration: none;
-  }
+ background-color: #f2f2f2;
+ padding: 0px;
+ margin: 0px;
+ font-size: 13px;
+ font-family: "open_sanssemibold";
+ color: rgb(114, 112, 112);
+ line-height: 1.692;
+ text-align: center;
+ text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+ width: 100%;
+ display: inline-block;
+ min-height: 33px;
+ line-height: 2;
+ word-wrap: break-word;
+ padding: 0px 10px 0px 10px;
+ text-decoration: none;
+}
 
-  .works-bottom-text{
-  	font-size: 12px;
-    font-family: "open_sansregular";
-    color: rgb(114, 112, 112);
-    line-height: 1.333;
-    text-align: center;
-    background-color: #ffffff;
-    min-height: 100%;
-    margin: 0px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: 9px 5px 9px 5px;
-    word-wrap: break-word;
-  }
+.works-bottom-text{
+ font-size: 12px;
+ font-family: "open_sansregular";
+ color: rgb(114, 112, 112);
+ line-height: 1.333;
+ text-align: center;
+ background-color: #ffffff;
+ min-height: 100%;
+ margin: 0px;
+ border-bottom-left-radius: 5px;
+ border-bottom-right-radius: 5px;
+ padding: 9px 5px 9px 5px;
+ word-wrap: break-word;
+}
 
 
-  .section-my-works-list-item-add {
-  	border: 1px solid #9f9f9f;
-    width: 166px;
-    height: 133px;
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    margin-bottom: 24px;
-    border-radius: 5px;
-    margin-left: 14px;
-    margin-right: 14px;
+.my-works-list-item-add {
+ border: 1px solid #9f9f9f;
+ width: 166px;
+ height: 133px;
+ display: inline-block;
+ vertical-align: top;
+ position: relative;
+ margin-bottom: 24px;
+ border-radius: 5px;
+ margin-left: 14px;
+ margin-right: 14px;
 
-  }
+}
 
 .works-link-add {
-  	background-color: #fff;
-  	display: block;
-  	height: 100%;
-  	padding: 26px 57px;
-  	position: relative;
-  	text-decoration: none;  
-  	background: #fefefd;
-    background-image: -webkit-linear-gradient(#fefefd, #ebe9e8);
-    background-image: -o-linear-gradient(#fefefd, #ebe9e8);
-    background-image: linear-gradient(#fefefd, #ebe9e8);
+ background-color: #fff;
+ display: block;
+ height: 100%;
+ padding: 26px 57px;
+ position: relative;
+ text-decoration: none;  
+ background: #fefefd;
+ background-image: -webkit-linear-gradient(#fefefd, #ebe9e8);
+ background-image: -o-linear-gradient(#fefefd, #ebe9e8);
+ background-image: linear-gradient(#fefefd, #ebe9e8);
 
-  }
+}
 
 .works-link-add:hover{
 	background: #e5e4e4;
@@ -164,22 +166,22 @@
 	background-color: #d7d7d7;
 }
 
-  .circle:before {
-    background: url("../img/polaroid.png") no-repeat;
-    margin-top: 18px;
-   }
+.circle:before {
+  background: url("../img/polaroid.png") no-repeat;
+  margin-top: 18px;
+}
 
-   .works-link-text {
-   	display: inline-block;
-   	width: 128px;
-		position: absolute;
-		top: 89px;
-    left: 22px;
-   	font-size: 14px;
-    font-family: "open_sanssemibold";
-    color: rgb(114, 112, 112);
-    line-height: 1.692;
-    text-align: center;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
- 
-   }
+.works-link-text {
+  display: inline-block;
+  width: 128px;
+  position: absolute;
+  top: 89px;
+  left: 22px;
+  font-size: 14px;
+  font-family: "open_sanssemibold";
+  color: rgb(114, 112, 112);
+  line-height: 1.692;
+  text-align: center;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+  
+}

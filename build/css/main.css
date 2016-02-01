@@ -36,7 +36,7 @@ body, html {
   background-size: cover; }
 
 .container {
-  max-width: 1190px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 10px;
   height: 90px; }
@@ -57,16 +57,12 @@ body, html {
 
 .socials {
   list-style-type: none;
-  width: 195px;
   float: right;
   padding-left: 0; }
 
 .social-list {
   float: right;
-  padding-right: 15px; }
-
-.social-list.padding-r {
-  padding-right: 0; }
+  padding-left: 15px; }
 
 .facebook:hover {
   background: url("../img/spritesheet.png") no-repeat;
@@ -105,6 +101,7 @@ body, html {
   background-position: -2px -143px; }
 
 .socal-links {
+  position: relative;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -112,7 +109,7 @@ body, html {
   background-color: #eeeceb; }
 
 .main {
-  max-width: 970px;
+  max-width: 960px;
   margin: 41px auto -9px; }
 
 .sidebar {
@@ -125,7 +122,8 @@ body, html {
   list-style-type: none;
   font-family: 'open_sanssemibold';
   font-size: 20px;
-  height: 170px; }
+  height: 170px;
+  margin-bottom: 35px; }
 
 .side-bar-links {
   display: block;
@@ -171,9 +169,6 @@ body, html {
   background-image: linear-gradient(to bottom, #e4e3e3, #c1bfbf);
   color: #868484; }
 
-.side-bar-contacts {
-  margin-top: 35px; }
-
 .side-bar-title-contacts {
   margin: 0;
   padding: 9px 28px;
@@ -196,7 +191,7 @@ body, html {
   font-size: 14px;
   color: #727070; }
 
-.side-bar-list-contacts-links {
+.contacts-links {
   display: block;
   height: 38px;
   border: 1px solid #d6d5d3;
@@ -293,13 +288,10 @@ body, html {
 .content-wrap {
   float: right;
   width: 651px;
-  margin-right: 10px;
   margin-bottom: 10px;
   padding: 0; }
 
-.section-information-title,
-.experience-title,
-.education-title,
+.section-title,
 .section-my-works-title,
 .write-to-me-title {
   margin: 0;
@@ -310,22 +302,19 @@ body, html {
   background-image: -o-linear-gradient(top, #a8a6a6, #7b7979);
   background-image: linear-gradient(to bottom, #a8a6a6, #7b7979);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
-  height: 55px;
+  line-height: 55px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   font-size: 24px;
   font-family: "open_sanssemibold";
   color: #eeedec;
   text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
-  padding-top: 11px;
   padding-left: 42px; }
 
 .section-information-wrap {
-  margin-bottom: 9px; }
+  margin: 30px 56px 9px 42px; }
 
-.section-information,
-.experience,
-.education,
+.section,
 .section-my-works,
 .write-to-me {
   background-color: #f6f5f5;
@@ -335,16 +324,13 @@ body, html {
   position: relative;
   margin-bottom: 34px; }
 
-.section-information-photo,
-.section-information-list {
-  display: inline-block; }
+.information-photo-wrap {
+  float: left;
+  padding-top: 10px; }
 
 .section-information-photo {
-  float: left;
   width: 152px;
   height: 152px;
-  margin-top: 40px;
-  margin-left: 41px;
   overflow: hidden;
   border-radius: 50%;
   border: 10px solid #f6f5f4;
@@ -357,10 +343,10 @@ body, html {
   height: auto; }
 
 .section-information-list {
-  float: left;
+  float: right;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-  margin-top: 30px;
-  padding-left: 35px;
   max-width: 400px;
   font-family: "open_sanssemibold";
   font-size: 14px;
@@ -371,6 +357,15 @@ body, html {
 
 .information > p {
   margin: 0; }
+
+.information-key-skills-title {
+  display: inline-block;
+  vertical-align: top; }
+
+.information-key-skills-list {
+  display: inline-block;
+  width: 225px;
+  padding-left: 18px; }
 
 .key-skills {
   margin-top: 10px; }
@@ -387,8 +382,7 @@ body, html {
   background-repeat: repeat-x;
   height: 21px;
   line-height: 21px;
-  margin-right: 17px;
-  cursor: pointer; }
+  margin-right: 17px; }
 
 .information-key-skills:before {
   background-image: url("../img/key-skills-b.png");
@@ -414,8 +408,18 @@ body, html {
   left: 4px;
   position: relative; }
 
+.circle-wrap {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%); }
+
 .circle {
-  float: left;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
   width: 54px;
   height: 54px;
   display: inline-block;
@@ -448,11 +452,8 @@ body, html {
 
 .work-wrap,
 .education-wrap {
-  display: inline-block;
-  margin-left: 45px;
-  margin-top: 2px;
-  margin-bottom: 23px;
-  float: left; }
+  display: block;
+  margin-left: 80px; }
 
 .work-title,
 .education-title-text {
@@ -467,7 +468,7 @@ body, html {
 
 .experience-list-li,
 .education-list-li {
-  display: inline-block;
+  display: block;
   color: #727070; }
 
 .experience-list-li:after {
