@@ -26,7 +26,7 @@
 
 .write-to-me-form-wrap {
   margin: 33px auto 250px;
-  max-width: 400px;
+  max-width: 404px;
 }
 
 .form-name,
@@ -35,7 +35,7 @@
 }
 
 .form-email {
-  margin-left: 13px;
+  margin-left: 15px;
 }
 
 .form-name-label,
@@ -45,33 +45,33 @@
   font-size: 14px;
   font-family: "Open Sans";
   color: rgb(114, 112, 112);
-  line-height: 1;
   text-align: left;
   margin-bottom: 6px;
 }
 
 .form-name-input,
 .form-email-input,
-.form-massage-input{
+.form-massage-input {
     border: solid 1px rgb(214, 213, 211);
     border-radius: 3px;
-    background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background:  #eee;
+    background: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+    background: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
     box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
-    height: 39px;
-    width: 191px;
+    height: 42px;
+    width: 192px;
     font-size: 12px;
     font-family: "open_sansregular";
     color: rgb(199, 198, 198);
-    line-height: 1.2;
     padding-left: 9px;
     outline: none;
     resize: none;
+
 }
 
 .form-message-wrap{
-  margin: 20px 0; 
+  margin: 13px 0; 
 }
 
 .form-capcha-wrap {
@@ -84,16 +84,18 @@
 }
 
 .form-massage-input {
+  padding-top: 10px;
   width: 100%;
-  height: 100%;
+  height: 185px;
 }
 
-.form-button-send,
-.form-button-clear {
-  display: inline-block;
+
+.form-button-wrap {
+  padding: 0 30px;
 }
 
 .form-button-send {
+  float: left;
     border: none;
     border-radius: 5px;
     background-image: -moz-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
@@ -133,7 +135,6 @@
     display: block;
     width: 123px;
     min-height: 39px;
-    word-wrap: break-word;
 }
 
 
@@ -144,7 +145,7 @@
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
 }
 
-.form-button-clear {
+.form-button-clear:hover {
   background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);

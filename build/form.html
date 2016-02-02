@@ -1,141 +1,159 @@
 <!DOCTYPE html>
-<html lang="en-UA">
+<html lang="ru-UA">
 <head>
 	<meta charset="UTF-8">
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/form.css">
 	<!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="container clearfix">		
-					<a href="#" class="logo" >
-						<img src="img/logo.png" class="logo-img" alt="logo">
-						<span class="logo-text">
-							Loftschool. От мыслителя к создателю.
-						</span>
-					</a>
-					<ul class="socials">
-						<li class="social-list padding-r">
-							<a href="" class="socal-links github ">
-								
-							</a>
-						</li>
-						<li class="social-list">
-							<a href="" class="socal-links twitter">
-								
-							</a>
-						</li>
-						<li class="social-list">
-							<a href="" class="socal-links vkontakte">
-								
-							</a>
-						</li>
-						<li class="social-list ">
-							<a href="" class="socal-links facebook">
-								
-							</a>
-						</li>
-					</ul>
-			</div>
-		</header>
-		<main class="main clearfix">
-			<aside class="sidebar">
-				<ul class="side-bar-menu">
-					<li class="side-bar-menu-list">
-					  <a class="side-bar-links about " href="index.html">
-					  Обо мне</a> 
-					</li>
-					<li class="side-bar-menu-list">
-						<a class="side-bar-links works " href="works.html">
-						Мои Работы</a> 
-					</li>
-					<li class="side-bar-menu-list">
-						<a class="side-bar-links callback active" href="form.html">
-						Обратная связь</a> 
-					</li>
-				</ul>
-				<div class="side-bar-contacts">
-					<h3 class="side-bar-title-contacts">
-						Контакты
-					</h3>
-					<ul class="side-bar-list-contacts">
-						<li class="side-bar-list-contacts-li"><a href="mailto:dandidyk@yandex.ru" class="side-bar-list-contacts-links email">
-							dandidyk@yandex.ru
-						</a></li>
-						<li class="side-bar-list-contacts-li"><a href="tel:+380638773334" class="side-bar-list-contacts-links phone">
-							+380638773334
-						</a></li>
-						<li class="side-bar-list-contacts-li"><a href="skype:bohdan_didyk" class="side-bar-list-contacts-links nick">
-							bohdan_didyk
-						</a></li>
-					</ul>
-				</div>
-			</aside>
-			<div class="content-wrap">
-				<section class="write-to-me">
-					<h3 class="write-to-me-title">
-						У вас интересный проект? Напишите мне
-					</h3>
-					<div class="write-to-me-form-wrap">
-					<form action="" class="write-to-me-form">
-						<div class="form-name-email-wrap">
-							<div class="form-name">
-								<label for="" class="form-name-label">
-									Имя
-								</label>
-								<input type="text" class="form-name-input"
-								placeholder="Как к Вам обращаться">
-							</div>
-							<div class="form-email">
-								<label for="" class="form-email-label">
-									Email
-								</label>
-								<input type="text" class="form-email-input"
-								placeholder=" Куда мне писать">
-							</div>
-						</div>
-						<div class="form-message-wrap">
-							<label for="" class="form-massage-label">
-								Сообщение
-							</label>
-							<textarea class="form-massage-input" rows="10" placeholder="Кратко в чем суть">
-							</textarea>
-						</div>
-						<div class="form-capcha-wrap">
-							<div data-theme="dark" class="g-recaptcha" data-sitekey="6LfAwhYTAAAAAEBWmOh3qcOPB41ZtcCG3SaCipIY"></div>
-						</div>
-						<div class="form-button-wrap">
-							<input type="submit" value="Отправить" class="form-button-send">
-							<input type="reset" value="Очистить" class="form-button-clear">
-						</div>
-					</form>
-				</div>
-				</section>
-			</div>
-			
-		</main>
-		<div class="empty"></div>
-	</div>
+    <![endif]-->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+  	<div class="preloader"></div>
+  	<div class="wrapper">
+  		<header class="header">
+  			<div class="container clearfix">		
+  				<a href="index.html" class="logo" >
+  					<img src="img/logo.png" class="logo-img" alt="logo">
+  					<span class="logo-text">
+  						Loftschool. От мыслителя к создателю.
+  					</span>
+  				</a>
+  				<ul class="socials">
+  					<li class="social-list">
+  						<a target="_blank" href="#" class="socal-links github ">
+  							<span class="logo-text">
+  								github
+  							</span>
+  						</a>
+  					</li>
+  					<li class="social-list">
+  						<a target="_blank" href="#" class="socal-links twitter">
+  							<span class="logo-text">
+  								twitter
+  							</span>
+  						</a>
+  					</li>
+  					<li class="social-list">
+  						<a target="_blank" href="#" class="socal-links vkontakte">
+  							<span class="logo-text">
+  								vkontakte
+  							</span>
+  						</a>
+  					</li>
+  					<li class="social-list">
+  						<a target="_blank" href="#" class="socal-links facebook">
+  							<span class="logo-text">
+  								facebook
+  							</span>
+  						</a>
+  					</li>
+  				</ul>
+  			</div>
+  		</header>
+  		<main class="main clearfix">
+  			<aside class="sidebar">
+  				<ul class="side-bar-menu">
+  					<li class="side-bar-menu-list">
+  						<a class="side-bar-links about " href="index.html">
+  							Обо мне</a> 
+  						</li>
+  						<li class="side-bar-menu-list">
+  							<a class="side-bar-links works " href="works.html">
+  								Мои Работы</a> 
+  							</li>
+  							<li class="side-bar-menu-list">
+  								<a class="side-bar-links active callback" href="form.html">
+  									Обратная связь</a> 
+  								</li>
+  							</ul>
+  							<div class="side-bar-contacts">
+  								<h3 class="side-bar-title-contacts">
+  									Контакты
+  								</h3>
+  								<ul class="side-bar-list-contacts">
+  									<li class="contacts-item"><a href="mailto:dandidyk@yandex.ru" class="contacts-links email">
+  										dandidyk@yandex.ru
+  									</a></li>
+  									<li class="contacts-item"><a href="tel:+380638773334" class="contacts-links phone">
+  										+380638773334
+  									</a></li>
+  									<li class="contacts-item"><a href="skype:bohdan_didyk" class="contacts-links nick">
+  										bohdan_didyk
+  									</a></li>
+  								</ul>
+  							</div>
+  		  </aside>
+  						<div class="content-wrap">
+  							<section class="write-to-me">
+  								<h3 class="write-to-me-title">
+  									У вас интересный проект? Напишите мне
+  								</h3>
+  								<div class="write-to-me-form-wrap">
+  									<form action="" class="write-to-me-form">
+  										<div class="form-name-email-wrap">
+  											<div class="form-name">
+  												<label for="name" class="form-name-label">
+  													Имя
+  												</label>
+  												<input type="text" id="name" class="form-name-input"
+  												placeholder="Как к Вам обращаться">
+  											</div>
+  											<div class="form-email">
+  												<label for="email" class="form-email-label">
+  													Email
+  												</label>
+  												<input type="text" id="email" class="form-email-input"
+  												placeholder="Куда мне писать">
+  											</div>
+  										</div>
+  										<div class="form-message-wrap">
+  											<label for="massage" class="form-massage-label">
+  												Сообщение
+  											</label>
+  											<textarea placeholder="Кратко в чем суть" id="massage" class="form-massage-input"></textarea>
+  										</div>
+  										<div class="form-capcha-wrap">
+  											<div data-theme="dark" class="g-recaptcha" data-sitekey="6LfAwhYTAAAAAEBWmOh3qcOPB41ZtcCG3SaCipIY"></div>
+  										</div>
+  										<div class="form-button-wrap clearfix">
+  											<button type="submit" class="form-button-send">Отправить</button>
+  											<button type="reset" class="form-button-clear">
+  												Очистить
+  											</button>
+  										</div>
+  									</form>
+  								</div>
+  							</section>
+  						</div>
+
+  					</main>
+  					<div class="empty"></div>
+  				</div>
 
 
-	<footer class="footer">
-		<div class="footer-wrap">
+  				<footer class="footer">
+  					<div class="footer-wrap">
 
-			<div class="footer-lock">
-				<a href="#" class="footer-lock-link">Вход</a>
-			</div>
-			<div class="footer-text">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</div>
-		</div>
-	</footer>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-</body>
-</html>
+  						<div class="footer-lock">
+  							<a href="#" class="footer-lock-link">Вход</a>
+  						</div>
+  						<div class="footer-text">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</div>
+  					</div>
+  				</footer>
+  				<script src='https://www.google.com/recaptcha/api.js'></script>
+  				<script src="bower_components/jquery/dist/jquery.js"></script>
+
+  				<script type="text/javascript">
+  					$(window).load(function(){
+  						$(".preloader").fadeOut(1000);
+  					});
+  				</script>
+  			</body>
+  			</html>
